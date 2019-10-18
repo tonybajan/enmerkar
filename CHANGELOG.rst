@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 - forked from django-babel
+- drop support for Python < 3.4, Django < 2.0
 - compatibility with Django 2.1 and 2.2 added
   From @tsouvarev work : https://github.com/python-babel/django-babel/pull/45
 

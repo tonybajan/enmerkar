@@ -6,15 +6,9 @@ env:
   - TOX_ENV=lint
   - TOX_ENV=py36-django20
   - TOX_ENV=py36-django21
-  - TOX_ENV=py37-django21
-  - TOX_ENV=py37-django22
-  - TOX_ENV=py38-djangomaster
-matrix:
+  - TOX_ENV=py36-django22
+jobs:
   include:
-    - env: TOX_ENV=py36-django20
-      python: "3.6"
-    - env: TOX_ENV=py36-django21
-      python: "3.7"
     - env: TOX_ENV=py37-django21
       python: "3.7"
     - env: TOX_ENV=py37-django22

@@ -22,7 +22,7 @@ needs to be in your project package directory.
 Extraction Method Mapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-So django-babel comes with an extraction method plugin that can extract
+So enmerkar comes with an extraction method plugin that can extract
 localizable messages from Django template files. Python is supported out of the
 box by Babel. To use this extraction functionality, create a file called
 ``babel.cfg`` in your project directory (the directory above your project
@@ -44,7 +44,7 @@ Also, any files with the extension ``.py`` inside your package directory (replac
 “mypkg” with the actual name of your Django project package) are processed by
 the “python” extraction method.
 
-If you don't use setuptools, or for some reason haven't installed django-babel
+If you don't use setuptools, or for some reason haven't installed enmerkar
 using setuptools/pip, you'll need to define what function the extraction method
 “django” maps to. This is done in an extra section at the top of the
 configuration file:
@@ -52,7 +52,7 @@ configuration file:
 .. code-block:: ini
 
     [extractors]
-    django = django_babel.extract:extract_django
+    django = enmerkar.extract:extract_django
 
 The encoding of the templates is assumed to be UTF-8. If you are using a
 different encoding, you will need to specify it in the configuration. For
@@ -138,9 +138,9 @@ This is described at `Distutils/Setuptools Integration`_.
 Using the Middleware
 --------------------
 
-To use the Babel middleware, add it to the list of ``MIDDLEWARE_CLASSES`` in your
+To use the enmerkar middleware, add it to the list of ``MIDDLEWARE_CLASSES`` in your
 settings module. If you're also using Django's own ``LocaleMiddleware`` to vary
-the locale based on user preference, the Babel middleware must be inserted
+the locale based on user preference, the enmerkar middleware must be inserted
 after the Django one:
 
 .. code-block:: python
@@ -148,7 +148,7 @@ after the Django one:
     MIDDLEWARE_CLASSES = (
         ...
         'django.middleware.locale.LocaleMiddleware',
-        'django_babel.middleware.LocaleMiddleware',
+        'enmerkar.middleware.LocaleMiddleware',
         ...
     )
 
@@ -162,24 +162,24 @@ locale from a thread-local cache.
 Using the Template Tags
 -----------------------
 
-The template filters provided by django-babel allow formatting of date/time and
+The template filters provided by enmerkar allow formatting of date/time and
 number values in a locale-sensitive manner, providing much more powerful
 alternatives to the ``date``, ``time``, and ``floatformat`` filters that come with
 Django.
 
-To make the template filters/tags available, you need to add django-babel to
+To make the template filters/tags available, you need to add enmerkar to
 the list of ``INSTALLED_APPS`` in your settings module:
 
 .. code-block:: python
 
     INSTALLED_APPS = (
         ...
-        'django_babel',
+        'enmerkar',
         ...
     )
 
 And in every template you want to use the filters, you need to explicitly load
-the django-babel library:
+the library:
 
 .. code-block:: django
 

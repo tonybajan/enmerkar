@@ -12,19 +12,19 @@ def read(*parts):
 
 
 setup(
-    name='django-babel',
+    name='enmerkar',
     description='Utilities for using Babel in Django',
     long_description=read('README.rst') + u'\n\n' + read('CHANGELOG.rst'),
-    version='0.6.3.dev0',
+    version='0.7.0dev0',
     license='BSD',
     author='Christopher Grebs',
     author_email='cg@webshox.org',
-    maintainer='Thomas Grainger',
-    maintainer_email='django-babel@graingert.co.uk',
-    url='https://github.com/python-babel/django-babel/',
+    maintainer='Zego',
+    maintainer_email='opensource@zego.com',
+    url='https://github.com/Zegocover/enmerkar',
     packages=find_packages(exclude=('tests',)),
     install_requires=[
-        'django>=1.8,<3.0',
+        'django>=2.0,<3.0',
         'babel>=1.3',
     ],
     classifiers=[
@@ -36,18 +36,18 @@ setup(
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Framework :: Django',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: Implementation :: PyPy',
         'Programming Language :: Python :: Implementation :: CPython',
     ],
     entry_points={
         'babel.extractors': [
-            'django = django_babel.extract:extract_django',
+            'django = enmerkar.extract:extract_django',
         ]
     }
 )

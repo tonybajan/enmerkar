@@ -1,5 +1,5 @@
 Management Commands
 ===================
 
-.. automodule:: django_babel.management.commands.babel
+.. automodule:: enmerkar.management.commands.babel
    :members:

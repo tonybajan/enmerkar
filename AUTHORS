@@ -1,4 +1,11 @@
-django-babel is written and maintained by the django-babel team and various
+enmerkar is maintained by the engineering team at Zego <opensource@zego.com>
+
+Contributors:
+
+- Tony Bajan <tony@zego.com>
+
+
+It was forked from django-babel, written by the django-babel team and various
 contributors:
 
 Contributors:
@@ -9,7 +16,6 @@ Contributors:
 - Ramiro Morales <cramm0@gmail.com>
 - Thomas Grainger <tagrain@gmail.com>
 - Christopher Grebs <cg@webshox.org>
-
 
 django-babel was previously developed under the Copyright of Edgewall Software.
 The following copyright notice holds true for releases before 2013: "Copyright

@@ -11,7 +11,7 @@ try:
 except ImportError:
     timezone = None
 
-from django_babel.middleware import get_current_locale
+from enmerkar.middleware import get_current_locale
 
 __all__ = [
     'datefmt', 'datetimefmt', 'timefmt', 'numberfmt', 'decimalfmt',

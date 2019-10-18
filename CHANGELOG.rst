@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.3 (unreleased)
+0.7.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- forked from django-babel
+- compatibility with Django 2.1 and 2.2 added
 
 0.6.2 (2017-12-18)
 ------------------
@@ -111,4 +111,4 @@ Changelog
 * Use GitHub as source control
 
 
-.. _`master`: https://github.com/python-babel/django-babel
+.. _`master`: https://github.com/Zegocover/enmerkar

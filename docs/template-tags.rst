@@ -1,5 +1,5 @@
 Template Tags
 =============
 
-.. automodule:: django_babel.templatetags.babel
+.. automodule:: enmerkar.templatetags.babel
    :members:

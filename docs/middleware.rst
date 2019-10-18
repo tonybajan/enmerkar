@@ -1,5 +1,5 @@
 Middleware
 ==========
 
-.. automodule:: django_babel.middleware
+.. automodule:: enmerkar.middleware
    :members:

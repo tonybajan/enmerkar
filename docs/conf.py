@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# django-babel documentation build configuration file, created by
+# enmerkar documentation build configuration file, created by
 # sphinx-quickstart on Sat Feb 22 14:40:46 2014.
 #
 # This file is execfile()d with the current directory set to its
@@ -16,7 +16,7 @@
 import sys
 import os
 
-import django_babel
+import enmerkar
 
 
 def _short_version(release):
@@ -58,15 +58,15 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'django-babel'
-copyright = '2014, Christopher Grebs'
+project = 'enmerkar'
+copyright = '2019 Extracover Holdings Limited'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 
 # The full version, including alpha/beta/rc tags.
-release = django_babel.__version__
+release = enmerkar.__version__
 # The short X.Y version.
 version = _short_version(release)
 
@@ -210,8 +210,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'django-babel.tex', 'django-babel Documentation',
-   'Christopher Grebs', 'manual'),
+  ('index', 'enmerkar.tex', 'enmerkar Documentation', 'Zego', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -240,8 +239,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'django-babel', 'django-babel Documentation',
-     ['Christopher Grebs'], 1)
+    ('index', 'enmerkar', 'enmerkar Documentation', ['Zego'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -254,8 +252,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'django-babel', 'django-babel Documentation',
-   'Christopher Grebs', 'django-babel', 'One line description of project.',
+  ('index', 'enmerkar', 'enmerkar Documentation',
+   'Zego', 'enmerkar', 'One line description of project.',
    'Miscellaneous'),
 ]
 

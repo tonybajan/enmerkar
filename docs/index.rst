@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 ========================================
-Welcome to django-babel's documentation!
+Welcome to enmerkar's documentation!
 ========================================
 
 .. include:: ../README.rst

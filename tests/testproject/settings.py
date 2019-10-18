@@ -4,12 +4,12 @@ SECRET_KEY = 'x'
 USE_I18N = True
 ROOT_URLCONF = 'testproject.urls'
 INSTALLED_APPS = [
-    'django_babel',
+    'enmerkar',
     'testproject',
 ]
 MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
-    'django_babel.middleware.LocaleMiddleware',
+    'enmerkar.middleware.LocaleMiddleware',
 ]
 MIDDLEWARE_CLASSES = MIDDLEWARE  # backwards compat
 TEMPLATES = [

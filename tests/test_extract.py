@@ -7,7 +7,7 @@ from babel.messages import extract
 from babel._compat import BytesIO
 
 import django
-from django_babel.extract import extract_django
+from enmerkar.extract import extract_django
 
 
 default_keys = extract.DEFAULT_KEYWORDS.keys()

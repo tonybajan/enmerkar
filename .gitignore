@@ -3,6 +3,6 @@ build
 .coverage
 dist
 *.pyc
-django_babel.egg-info
+*.egg-info
 .tox
 htmlcov

@@ -1,5 +1,5 @@
 Extract
 =======
 
-.. automodule:: django_babel.extract
+.. automodule:: enmerkar.extract
    :members:

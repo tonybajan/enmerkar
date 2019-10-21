@@ -2,19 +2,28 @@ language: python
 python: 3.6
 sudo: false
 env:
-  - TOX_ENV=docs
-  - TOX_ENV=lint
-  - TOX_ENV=py36-django20
-  - TOX_ENV=py36-django21
-  - TOX_ENV=py36-django22
+- TOX_ENV=docs
+- TOX_ENV=lint
+- TOX_ENV=py36-django20
+- TOX_ENV=py36-django21
+- TOX_ENV=py36-django22
 jobs:
   include:
-    - env: TOX_ENV=py37-django21
-      python: "3.7"
-    - env: TOX_ENV=py37-django22
-      python: "3.7"
-    - env: TOX_ENV=py38-djangomaster
-      python: "3.8"
+  - env: TOX_ENV=py37-django21
+    python: '3.7'
+  - env: TOX_ENV=py37-django22
+    python: '3.7'
+  - env: TOX_ENV=py38-djangomaster
+    python: '3.8'
 install: pip install tox
 script: tox -e $TOX_ENV
 cache: pip
+deploy:
+  provider: pypi
+  user: __token__
+  password:
+    secure: h4RhYiHnw2iday8vuZvws/pikONqdiAK92ToBRK9pXf+lp/OwLwmw19nIWO044PVDUmqueVS0tXwOkVZmj8rYYFHNZLE9YGTz+H2o6ir9GuN7swU2fEygy48jeS5CQFP+yiyUwVHo3NGsRJEuahHskq5AmYXGzA+W8X1bZB28x7axa6idvrqR+SzfGP1/TFC6AF/0lW+691nG+Anw71uNoAEW9eSwUymydKVa+PxSVYdATsNl9EaTdHh2UuUaFan7wbG+dsMY2HnwV9GOaO5+rZ08H7FNqFlF0+AD0kWdonSAp8/5ufXnvR5GJ1PDflWvEULFg3dJr+QBsBNSVXdgIh7oKb2FpnSJQIRmuwK+CuImc77v9NmMQ7QT7DJvDljkop4UJvqbtwyPDiYKyV/z+XTy9QKdIMopKOYAZsLdN68pwYGJrVkA8Q1fG9sQhVO9tt+4QU++SmhglWqCZSS2KBdMHLN+RbwtZkyf3Txz6d5/AkyKorn2BetmR3CKH5Hof1+iNkiCi1gK1pZ5ZRJWBuVwbBwCQbY8LifrAZi//+xs3XsEzkY8AmG2QXEBqnPOednAanQ59KxgEKEiAyaqjumAjC3GoL+dfVvialv3h3S4zJvt4O7N0DpFWVtYxUkbJoKPg4j0VWoCk/5zNQUzb/wuGzC0LzTw7zh1UigymE=
+  on:
+    tags: true
+  distributions: "sdist bdist_wheel"
+  skip_existing: true

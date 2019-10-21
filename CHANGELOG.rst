@@ -1,7 +1,13 @@
 Changelog
 =========
 
-0.7.0 (unreleased)
+0.7.1 (unreleased)
+------------------
+
+...
+
+
+0.7.0 (2019-10-21)
 ------------------
 
 - forked from django-babel

@@ -4,7 +4,8 @@ Changelog
 0.7.1 (unreleased)
 ------------------
 
-...
+- compatibility with Django 3.0
+- drop support for Python < 3.5, Django < 2.2
 
 
 0.7.0 (2019-10-21)

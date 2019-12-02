@@ -24,7 +24,7 @@ setup(
     url='https://github.com/Zegocover/enmerkar',
     packages=find_packages(exclude=('tests',)),
     install_requires=[
-        'django>=2.0',
+        'django>=2.2',
         'babel>=1.3',
     ],
     classifiers=[

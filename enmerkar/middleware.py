@@ -1,15 +1,9 @@
 # -*- coding: utf-8 -*-
 
 from babel import Locale, UnknownLocaleError
+from django.utils.deprecation import MiddlewareMixin
 from django.utils.translation import get_language
 from threading import local
-
-try:
-    from django.utils.deprecation import MiddlewareMixin
-except ImportError:
-    # Not required for Django <= 1.9, see:
-    # https://docs.djangoproject.com/en/1.10/topics/http/middleware/#upgrading-pre-django-1-10-style-middleware
-    MiddlewareMixin = object
 
 
 __all__ = ['get_current_locale', 'LocaleMiddleware']
